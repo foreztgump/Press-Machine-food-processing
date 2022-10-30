@@ -116,7 +116,8 @@ void pushWorking() {
       Serial.println("Retract");
       break;
     }
-    if (current <= 495.00) {
+    if (current >= 760.00) {
+      digitalWrite(ledPin, LOW);
       motorController.Stop();
       delay(8000);
       flag_working = 0;
@@ -125,6 +126,7 @@ void pushWorking() {
 }
 
 void push() {
+  digitalWrite(ledPin, HIGH);
   for(int speed = 0 ; speed < 255; speed+=40) {
     motorController.TurnRight(speed); 
     delay(100);
@@ -132,6 +134,7 @@ void push() {
 }
 
 void pull() {
+  digitalWrite(ledPin, LOW);
   for(int speed = 0 ; speed < 255; speed+=40) {
     motorController.TurnLeft(speed);
     delay(100);

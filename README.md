@@ -14,7 +14,7 @@ ACS712 30A Current Sensor to monitor how hard press machine is pushing.
 
 IC 7805
 
-#Circuit Diagram
+# Circuit Diagram
 ![press_cd](https://github.com/foreztgump/Press-Machine-food-processing/blob/master/press_circuit.png)
 
 # Wiring

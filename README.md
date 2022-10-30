@@ -8,14 +8,19 @@ Arduino board
 
 BTS7960 as a motor Driver
 
-ACS712 Current Sensor to monitor how hard press machine is pushing.
+ACS712 30A Current Sensor to monitor how hard press machine is pushing.
 
-12v 10A power supply
+12v 30A power supply
 
 IC 7805
 
+#Circuit Diagram
+![press_cd](https://github.com/foreztgump/Press-Machine-food-processing/blob/master/press_circuit.png)
+
 # Wiring
 start_button - digital pin 3
+
+LED - digital pin 2
 
 stop_button - digital pin 4
 
